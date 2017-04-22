@@ -1,4 +1,3 @@
-
 def sieve(limit):
   primes = [ x for x in range(2, limit) ]
 
