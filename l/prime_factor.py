@@ -1,15 +1,13 @@
-import math
-
 from l import sieve
 
 
 def prime_factors(number):
-    primes = sieve.sieve(int(math.sqrt(number)))
+    primes = sieve.sieve(number)
 
     factors = []
 
     for prime in primes:
-        if number in primes:
+        if number in primes and number not in factors:
             factors.append(number)
             break
         if number % prime == 0:

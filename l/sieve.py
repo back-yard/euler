@@ -1,5 +1,5 @@
 def sieve(limit):
-    primes = [x for x in range(2, limit)]
+    primes = [x for x in range(2, limit+1)]
 
     for i in range(0, len(primes) / 2):
         if primes[i] is None:
