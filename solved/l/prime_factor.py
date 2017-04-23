@@ -1,4 +1,4 @@
-from l import sieve
+import sieve
 
 
 def prime_factors(number):
